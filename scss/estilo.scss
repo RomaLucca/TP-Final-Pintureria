@@ -1,0 +1,84 @@
+* { padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    color:rgb(9, 24, 238);
+    text-align: center;
+    font-size: 122px;
+    font-family: 'Lobster', cursive;
+ }
+ h3{
+    text-align: center;
+    font-size: 35px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu {
+      display: grid;
+      height: auto;
+      background-color: rgb(49, 100, 196);
+      grid-template-columns: auto auto auto auto auto;
+      grid-template-rows: repeat(0,100px);
+      
+      
+  }
+
+  .menu div {
+    
+          background-color: rgb(226, 7, 7);
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          transition: all 2s;
+          
+          
+  }
+
+  .menu div:hover{
+    transform: scale(1.05, 1.1);
+    border-radius: 95%;
+    background-color: rgb(245, 248, 246);
+    
+}
+
+
+
+
+  
+
+
+@keyframes fanimado{
+
+    0%{
+        background-position: 0%,50%;
+    }
+    50%{
+        background-position: 100%,50%;
+    }
+    100%{
+        background-position: 0%,50%;
+    }
+
+}
+
+@media all and (max-width: 600px){
+
+    div
+    { grid-column: 1 / span;}
+
+    h1{ font-size: 45px;}
+
+    .menu   {
+    
+       
+        grid-template-columns:auto;
+        
+}
+
+}
